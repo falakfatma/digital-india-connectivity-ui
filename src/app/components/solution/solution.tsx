@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Network, Database, Globe, MapPin, Shield, Zap } from "lucide-react";
 import GradientText from "../GradientTextProps/GradientTextProps";
 import Image from "next/image";
+import PatternIcon from "../PatternIcon";
+import PatternIcon2 from "../PatternIcon2";
 
 export default function Solution() {
   return (
@@ -14,7 +16,7 @@ export default function Solution() {
               colors={["#ffffff", "#ffaa40"]}
               animationSpeed={3}
               showBorder={false}
-              className="custom-class text-4xl md:text-5xl  mx-auto font-semibold tracking-[1.92px] text-center"
+              className="custom-class text-4xl md:text-6xl  mx-auto font-semibold tracking-[1.92px] text-center px-4 md:px-0 mb-4 md:mb-8"
             >
               Powering Digital India with
               <br />
@@ -22,7 +24,7 @@ export default function Solution() {
             </GradientText>
           </div>
           <div className="flex gap-6 mb-16 px-6 md:px-12 text-left justify-between ">
-            <Card className="min-w-[400px] max-w-[450px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem]  bg-[#56595f] border-gray-700 text-white">
+            <Card className="min-w-[400px] max-w-[500px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem]  bg-[#56595f] border-gray-700 text-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3 ">
                   <Network className="w-6 h-6  mt-1 flex-shrink-0" />
@@ -35,7 +37,7 @@ export default function Solution() {
               </CardContent>
             </Card>
 
-            <Card className="min-w-[400px] max-w-[450px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem]  bg-[#56595f] border-gray-700 text-white">
+            <Card className="min-w-[400px] max-w-[500px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem]  bg-[#56595f] border-gray-700 text-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3 ">
                   <Network className="w-6 h-6  mt-1 flex-shrink-0" />
@@ -51,7 +53,7 @@ export default function Solution() {
               </CardContent>
             </Card>
 
-            <Card className="min-w-[400px] max-w-[450px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem]  bg-[#56595f] border-gray-700 text-white">
+            <Card className="min-w-[400px] max-w-[500px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem]  bg-[#56595f] border-gray-700 text-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3 ">
                   <Network className="w-6 h-6  mt-1 flex-shrink-0" />
@@ -72,7 +74,7 @@ export default function Solution() {
 
         {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 px-6 md:px-12 mb-[10rem] justify-between content-evenly">
-          <Card className="min-w-[400px] max-w-[450px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem] border-gray-700 text-white bg-[#56595f]">
+          <Card className="min-w-[400px] max-w-[500px] max-h-[200px] min-h-[180px] rounded-[20px] opacity-100 p-[1rem] border-gray-700 text-white bg-[#56595f]">
             <CardContent className="p-6">
               <div className="flex items-start gap-3 ">
                 <Network className="w-6 h-6  mt-1 flex-shrink-0" />
@@ -122,7 +124,7 @@ export default function Solution() {
                 for Your Business
               </GradientText>
 
-              <p className="text-gray-300 leading-relaxed">
+              <p className="font-extralight text-[20px] leading-[100%] tracking-[3%] font-['Plus_Jakarta_Sans'] text-gray-300">
                 Experience the power of Lightstorm's innovative network
                 solutions, designed to optimize your network infrastructure and
                 empower your business growth. Benefit from automated network
@@ -134,7 +136,8 @@ export default function Solution() {
               <Card className="bg-[#262a31] rounded-[20px] border-[#262a31] text-white">
                 <CardContent className="py-4 px-6">
                   <div className="flex items-start gap-3 ">
-                    <Globe className="w-6 h-6  mt-1 flex-shrink-0" />
+                  <PatternIcon2 className="w-8 h-8" />
+
                     <h3 className="text-[22px] font-semibold tracking-[0.66px] font-['Plus_Jakarta_Sans'] mb-[10px] text-lg font-semibold">
                       Polarin: Your Gateway to the Cloud
                     </h3>
@@ -149,16 +152,16 @@ export default function Solution() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#262a31] rounded-[20px] border-[#262a31] text-white">
-                <CardContent className="p-6">
+              <Card className="bg-[#262a31] rounded-[20px] border-[#262a31] text-white mb-0 pb-0">
+                <CardContent className="p-[1rem] px-6">
                   <div className="flex items-start gap-3 ">
-                    <Zap className="w-6 h-6  mt-1 flex-shrink-0" />
+                    <PatternIcon className="w-8 h-8" />
                     <h3 className="text-[22px] font-semibold tracking-[0.66px] font-['Plus_Jakarta_Sans'] mb-[10px] text-lg font-semibold">
                       Smartnet: Unleash seamless connectivity, scalability, and
                       performance
                     </h3>
                   </div>
-                  <p className="text-[16px] leading-[20.16px] font-extralight tracking-[0.48px] font-['Plus_Jakarta_Sans'] mb-[10px] text-gray-300">
+                  <p className="text-[16px] leading-[20.16px] font-extralight tracking-[0.48px] font-['Plus_Jakarta_Sans'] mb-[0px] text-gray-300">
                   Experience seamless connectivity, scalability,
                     and performance with Smartnet. Our enterprise-grade network
                     solutions connect you to data centers worldwide, ensuring
